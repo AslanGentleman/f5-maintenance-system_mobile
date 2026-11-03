@@ -1,0 +1,17 @@
+F-5 USAF 1.0 - Atualização Job Guides
+
+O que foi alterado:
+- CMD_jobguide.html reorganizado com menus laterais por sistema e categoria.
+- Cada procedimento aponta para o PDF original usando #page=.
+- PDFs de Job Guide organizados em subpastas:
+  - Leme
+  - Ailerons
+  - Estabilizador Horizontal
+  - Flaps
+- Arquivos repetidos e IPBs que estavam dentro da pasta Job Guides não foram mantidos nessa pasta.
+- A área de Catálogo de Peças do projeto foi preservada e não foi alterada.
+
+Observação:
+- O parâmetro #page= usa a página física do arquivo PDF.
+- Chrome e Edge normalmente respeitam esse parâmetro no visualizador interno.
+- O Trailing Edge Flap ficou preparado na interface, mas sem procedimentos porque o Job Guide correspondente não estava no conjunto usado nesta atualização.

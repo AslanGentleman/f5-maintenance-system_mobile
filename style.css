@@ -1,0 +1,579 @@
+/* =====================================================
+   CONFIGURAÇÕES GERAIS
+   ===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #181d21,
+            #30383d
+        );
+
+    color: #eeeeee;
+
+    min-height: 100vh;
+}
+
+
+
+/* =====================================================
+   CABEÇALHO
+   ===================================================== */
+
+#header {
+    background:
+        linear-gradient(
+            135deg,
+            #10161b,
+            #263238
+        );
+
+    padding: 25px 40px;
+
+    border-bottom:
+        5px solid #f5b800;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.4);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-end;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+
+
+/* =====================================================
+   TÍTULO PRINCIPAL
+   ===================================================== */
+
+.cabecalho {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+h1 {
+    margin: 0;
+
+    font-size: 55px;
+
+    letter-spacing: 4px;
+}
+
+
+.home {
+    color: #ffffff;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+
+.home:hover {
+    color: #f5b800;
+}
+
+
+
+/* =====================================================
+   SUBTÍTULO
+   ===================================================== */
+
+.cabecalho h3 {
+    margin: 6px 0 0;
+
+    color: #aeb8bf;
+
+    font-size: 15px;
+
+    font-weight: normal;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+
+
+/* =====================================================
+   ÁREA DE BUSCA
+   ===================================================== */
+
+#header2 {
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+#header2 input {
+    width: 240px;
+
+    padding: 11px 13px;
+
+    background-color: #151a1f;
+
+    border:
+        1px solid #76838a;
+
+    border-radius: 4px;
+
+    color: white;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+#header2 input:focus {
+    border-color: #f5b800;
+
+    box-shadow:
+        0 0 5px rgba(245, 184, 0, 0.6);
+}
+
+
+#header2 input::placeholder {
+    color: #89949a;
+}
+
+
+#header2 button {
+    padding: 11px 19px;
+
+    background-color: #f5b800;
+
+    color: #161616;
+
+    border: none;
+
+    border-radius: 4px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+#header2 button:hover {
+    background-color: #ffd24a;
+
+    transform: translateY(-2px);
+}
+
+
+
+/* =====================================================
+   STATUS DO SISTEMA
+   ===================================================== */
+
+.status-sistema {
+    width: 90%;
+
+    max-width: 1050px;
+
+    margin:
+        30px auto 0;
+
+    padding: 12px 18px;
+
+    background-color: #101619;
+
+    border-left:
+        5px solid #67d878;
+
+    color: #9ce7a7;
+
+    font-family:
+        "Courier New",
+        Courier,
+        monospace;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+.status-luz {
+    display: inline-block;
+
+    width: 9px;
+    height: 9px;
+
+    margin-right: 10px;
+
+    background-color: #67d878;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 7px #67d878;
+}
+
+
+
+/* =====================================================
+   CONTAINER DOS CARDS
+   ===================================================== */
+
+.cards {
+    width: 90%;
+
+    max-width: 1050px;
+
+    margin: auto;
+
+    padding:
+        35px 0 60px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+
+/* =====================================================
+   CARDS
+   ===================================================== */
+
+.card {
+    min-height: 390px;
+
+    padding: 22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #293136,
+            #161b1f
+        );
+
+    border:
+        1px solid #657179;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 8px 15px rgba(0, 0, 0, 0.45);
+
+    transition: 0.3s;
+}
+
+
+.card:hover {
+    transform:
+        translateY(-7px);
+
+    box-shadow:
+        0 15px 25px rgba(0, 0, 0, 0.55);
+}
+
+
+
+/* =====================================================
+   NÚMERO DOS CARDS
+   ===================================================== */
+
+.card-numero {
+    margin-bottom: 8px;
+
+    color: #88959c;
+
+    font-family:
+        "Courier New",
+        Courier,
+        monospace;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+}
+
+
+
+/* =====================================================
+   TÍTULO DOS CARDS
+   ===================================================== */
+
+.card h2 {
+    margin-top: 0;
+
+    padding-bottom: 14px;
+
+    color: #f5b800;
+
+    font-size: 21px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    border-bottom:
+        2px solid #4e5b62;
+}
+
+
+
+/* =====================================================
+   LISTAS
+   ===================================================== */
+
+.card ul {
+    margin:
+        20px 0 0;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+
+.card li {
+    margin-bottom: 10px;
+
+    padding:
+        11px 12px;
+
+    background-color: #151a1f;
+
+    border-left:
+        3px solid #4e5b62;
+
+    color: #9ca7ad;
+
+    font-size: 14px;
+}
+
+
+
+/* =====================================================
+   LINK ATIVO
+   ===================================================== */
+
+.card li.disponivel {
+    padding: 0;
+
+    border-left-color: #f5b800;
+}
+
+
+.card li.disponivel a {
+    padding:
+        11px 12px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    color: #eeeeee;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+
+.card li.disponivel a:hover {
+    background-color: #252e33;
+
+    color: #f5b800;
+}
+
+
+.card li.disponivel span {
+    padding:
+        3px 6px;
+
+    background-color: #f5b800;
+
+    color: #161616;
+
+    border-radius: 3px;
+
+    font-family:
+        "Courier New",
+        Courier,
+        monospace;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+
+
+/* =====================================================
+   CORES INDIVIDUAIS
+   ===================================================== */
+
+#card0 {
+    border-top:
+        5px solid #f5b800;
+}
+
+
+#card1 {
+    border-top:
+        5px solid #71828c;
+}
+
+
+#card2 {
+    border-top:
+        5px solid #b54d3c;
+}
+
+
+
+/* =====================================================
+   RODAPÉ
+   ===================================================== */
+
+footer {
+    padding:
+        20px;
+
+    background-color: #10161b;
+
+    border-top:
+        1px solid #434d53;
+
+    color: #718087;
+
+    text-align: center;
+
+    font-family:
+        "Courier New",
+        Courier,
+        monospace;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+}
+
+
+
+/* =====================================================
+   RESPONSIVIDADE - TABLET
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+
+    #header2 {
+        justify-content: flex-start;
+    }
+
+
+    .cards {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+
+/* =====================================================
+   RESPONSIVIDADE - CELULAR
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    #header {
+        padding: 20px;
+    }
+
+
+    h1 {
+        font-size: 30px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .cabecalho h3 {
+        font-size: 12px;
+
+        letter-spacing: 1px;
+    }
+
+
+    #header2 {
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    #header2 input,
+    #header2 button {
+        width: 100%;
+    }
+
+
+    .status-sistema {
+        width: 94%;
+    }
+
+
+    .cards {
+        width: 94%;
+
+        grid-template-columns: 1fr;
+
+        padding-top: 25px;
+    }
+
+
+    .card {
+        min-height: auto;
+    }
+
+}
